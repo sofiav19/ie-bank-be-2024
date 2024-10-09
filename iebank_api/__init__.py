@@ -30,4 +30,5 @@ with app.app_context():
     db.create_all()
 CORS(app)
 
+
 from iebank_api import routes

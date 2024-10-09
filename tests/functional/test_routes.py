@@ -26,7 +26,8 @@ def test_create_account(testing_client):
     WHEN the '/accounts' page is posted to (POST)
     THEN check the response is valid
     """
-    response = testing_client.post('/accounts', json={'name': 'John Doe', 'currency': '€'})
+    response = testing_client.post('/accounts', json={'name': 'John Doe', 'currency': '€', 'country':'ES'})
     assert response.status_code == 200
 
 
+# test get by id, delete, update (put), skull
