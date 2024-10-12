@@ -47,7 +47,7 @@ def test_delete_account(testing_client):
     THEN check the response is valid
     """
     # First, create an account to delete
-    response = testing_client.post('/accounts', json={'name': 'Mark Smith', 'currency': '€', 'country': 'ES'})
+    response = testing_client.post('/accounts', json={'name': 'Mark Smith', 'currency': '€', 'country': 'Spain'})
     assert response.status_code == 200
     account_id = response.get_json()['id']
 
