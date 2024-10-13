@@ -22,7 +22,7 @@ from iebank_api.models import Account
 
 with app.app_context():
     db.create_all()
-CORS(app, resources={r"/api/*": {"origins": "*"}}) # Allow CORS for all domains
+CORS(app)
 
 
 from iebank_api import routes
