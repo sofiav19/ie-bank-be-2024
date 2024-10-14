@@ -63,7 +63,7 @@ def format_account(account):
         'account_number': account.account_number,
         'balance': account.balance,
         'currency': account.currency,
+        'country': account.country,
         'status': account.status,
-        'created_at': account.created_at,
-        'country': account.country
+        'created_at': account.created_at
     }
